@@ -1,5 +1,4 @@
 package pl.lotto.numberreceiver.dto;
 
-public record NumberReceiverResponseDto() {
-
+public record NumberReceiverResponseDto(String message) {
 }
