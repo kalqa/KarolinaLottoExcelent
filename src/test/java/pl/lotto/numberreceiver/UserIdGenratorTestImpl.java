@@ -2,8 +2,7 @@ package pl.lotto.numberreceiver;
 
 import java.util.UUID;
 
-class UserIdGenerator implements IdGenerable {
-
+public class UserIdGenratorTestImpl implements IdGenerable {
     @Override
     public String createIdentifier() {
         return UUID.randomUUID().toString();
