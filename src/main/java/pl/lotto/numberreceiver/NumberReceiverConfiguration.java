@@ -4,7 +4,8 @@ public class NumberReceiverConfiguration {
 
     public NumberReceiverFacade buildModuleForTests(UserNumbersRepository userNumbersRepository) {
         NumberValidator numberValidator = new NumberValidator();
-        return new NumberReceiverFacade(numberValidator, userNumbersRepository);
+        UserIdGenerator idGenerator = new UserIdGenerator();
+        return new NumberReceiverFacade(numberValidator, userNumbersRepository, idGenerator);
     }
 }
 

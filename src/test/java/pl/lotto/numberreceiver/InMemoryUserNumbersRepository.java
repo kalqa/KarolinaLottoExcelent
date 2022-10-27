@@ -22,8 +22,8 @@ public class InMemoryUserNumbersRepository implements UserNumbersRepository {
     }
 
     @Override
-    public Collection<Integer> save(Collection<Integer> numbers) {
-        database.put(UUID.randomUUID().toString(), numbers);
+    public Collection<Integer> save(String identifier, Collection<Integer> numbers) {
+        database.put(identifier, numbers);
         return numbers;
     }
 

@@ -101,6 +101,16 @@ public class NumberReceiverFacadeTest {
     }
 
     @Test
+    public void should_create_user_draw_identifier_when_saving_user_numbers() {
+
+    }
+
+    @Test
+    public void should_inform_user_when_next_draw() {
+
+    }
+
+    @Test
     public void should_return_saved_numbers_when_they_ask() {
         // given
         List<Integer> numbersFromUser = List.of(1, 2, 3, 4, 5, 8);
